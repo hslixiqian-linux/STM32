@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+".\objects\system_stm32f10x.o"
+".\objects\core_cm3.o"
+".\objects\stm32f10x_exti.o"
+".\objects\misc.o"
+".\objects\stm32f10x_dma.o"
+".\objects\stm32f10x_flash.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_sdio.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\main.o"
+".\objects\flash.o"
+".\objects\uart.o"
+".\objects\update.o"
+".\objects\delay.o"
+".\objects\stm32f10x_it.o"
+--library_type=microlib --strict --scatter ".\Objects\IAP.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\IAP.map" -o .\Objects\IAP.axf

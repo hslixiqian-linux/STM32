@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Microsoft, Microsoft, LIC=X1EWF-68WGU-WJB6K-ZRJY3-Q56IH-TPT8K
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      UL2CM3.DLL V1.155.8.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+C:\Users\gw\Desktop\IAP\CODE\IAP\IAP.uvprojx
+Project File Date:  11/27/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'CODE'
+compiling main.c...
+User\Src\main.c(32): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                IAP_Load_App(FLASH_APP_ADDR);//转到app
+User\Src\main.c(44): warning:  #223-D: function "IAP_REST_APP" declared implicitly
+                        IAP_REST_APP();
+User\Src\main.c(50): warning:  #223-D: function "Flash_WriteFlag" declared implicitly
+                Flash_WriteFlag(FLASH_UPDATA_FLAG,Flag);
+User\Src\main.c(74): warning:  #223-D: function "memset" declared implicitly
+                                        memset(UPDATE_BUFF,0,sizeof(UPDATE_BUFF));
+User\Src\main.c(94): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                                IAP_Load_App(FLASH_APP_ADDR);//转到app
+User\Src\main.c(97): warning:  #223-D: function "memset" declared implicitly
+                        memset(UPDATE_BUFF,0,sizeof(UPDATE_BUFF));
+User\Src\main.c(115): warning:  #223-D: function "memset" declared implicitly
+                        memset(UPDATE_BUFF,0,sizeof(UPDATE_BUFF));
+User\Src\main.c(129): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                IAP_Load_App(FLASH_APP_ADDR);//转到app
+User\Src\main.c(143): warning:  #223-D: function "memset" declared implicitly
+                        memset(UPDATE_BUFF,0,sizeof(UPDATE_BUFF));
+User\Src\main.c(157): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                IAP_Load_App(FLASH_APP_ADDR);//转到app
+User\Src\main.c(168): warning:  #223-D: function "memset" declared implicitly
+                        memset(UPDATE_BUFF,0,sizeof(UPDATE_BUFF));
+User\Src\main.c(175): warning:  #223-D: function "IAP_WriteBin" declared implicitly
+                        IAP_WriteBin(addr,UPDATE_BUFF,USART2_RX_CNT);
+User\Src\main.c(186): warning:  #223-D: function "IAP_Copy_App" declared implicitly
+                IAP_Copy_App();
+User\Src\main.c(196): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                    IAP_Load_App(FLASH_APP_ADDR);//转到app
+User\Src\main.c(205): warning:  #223-D: function "IAP_REST_APP" declared implicitly
+                        IAP_REST_APP();
+User\Src\main.c(206): warning:  #223-D: function "IAP_Load_App" declared implicitly
+                        IAP_Load_App(FLASH_APP_ADDR);//转到app                  
+User\Src\main.c: 16 warnings, 0 errors
+compiling flash.c...
+User\Src\flash.c(100): warning:  #117-D: non-void function "FLASH_WritePage" should return a value
+          return;
+User\Src\flash.c(111): warning:  #223-D: function "printf" declared implicitly
+                        printf("write erro ret:%d",ret);
+User\Src\flash.c(190): warning:  #223-D: function "printf" declared implicitly
+        printf("Date>Flash sieze! Addr:0x%x\n",Addr);
+User\Src\flash.c(204): warning:  #223-D: function "printf" declared implicitly
+                        printf("ret:%d\n",ret);
+User\Src\flash.c(250): warning:  #223-D: function "printf" declared implicitly
+                printf("Write flag Err ret:%d\n",ret);
+User\Src\flash.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=5824 RO-data=336 RW-data=60 ZI-data=23556  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin -o "IAP.axfIAP.bin" "C:\Users\gw\Desktop\IAP\CODE\IAP\Objects\IAP.axf"
+".\Objects\IAP.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\gw\Desktop\IAP\CODE\IAP\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
